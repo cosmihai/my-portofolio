@@ -1,15 +1,6 @@
-$mainBlue: #2f5572;
+@import "normalize.css";
+@import "base/_global";
+@import "modules/_general-presentation";
 
-body {
-  margin: 0;
-  padding: 0;
-  color: $mainBlue;
-}
 
-.nav {
-  a {
-    display: block;
-    padding: 10px;
-  }
-}
 
