@@ -1,0 +1,15 @@
+$mainBlue: #2f5572;
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $mainBlue;
+}
+
+.nav {
+  a {
+    display: block;
+    padding: 10px;
+  }
+}
+
