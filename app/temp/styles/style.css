@@ -355,5 +355,35 @@ img {
   position: relative;
 }
 
+.general-presentation img {
+    width: 100%;
+    opacity: .15;
+  }
+
+.general-presentation__text-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%) 
+  }
+
+.general-presentation__title {
+    font-weight: 300;
+    color: rgb(5, 49, 16);
+    font-size: 4.8rem;
+  }
+
+.general-presentation__subtitle {
+    font-weight: 300;
+    color: rgb(5, 49, 16);
+    font-size: 2.4rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+  }
+
 
 
