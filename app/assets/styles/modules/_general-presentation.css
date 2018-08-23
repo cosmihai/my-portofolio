@@ -1,6 +1,6 @@
 .general-presentation {
   position: relative;
-
+  
   & img {
     width: 100%;
     opacity: .15;
@@ -17,15 +17,43 @@
 
   &__title {
     font-weight: 300;
-    color: rgb(5, 49, 16);
-    font-size: 4.8rem;
+    color: $mainBlue;
+    font-size: 1.8rem;
+    margin-bottom: .6rem;
+
+    @mixin atSmall {
+      font-size: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 3.2rem;
+      margin-bottom: 2.4rem;
+    }
+
+    @mixin atLarge {
+      font-size: 4.8rem;
+      margin-bottom: 2.8rem;
+    }
   }
 
   &__subtitle {
     font-weight: 300;
-    color: rgb(5, 49, 16);
-    font-size: 2.4rem;
+    color: $mainBlue;
+    font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
+
+    @mixin atSmall {
+      font-size: 1.6rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2.1rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2.4rem;
+    }
   }
 }

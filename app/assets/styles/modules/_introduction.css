@@ -1,0 +1,50 @@
+.introduction {
+  background-color: rgb(244, 248, 255);
+
+  &__my-photo {
+    width: 100px;
+    overflow: hidden;
+    margin: 0 auto -50px auto;
+    border-radius: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    border: 2px solid $mainBlue;
+
+    @mixin atSmall {
+      width: 180px;
+      margin: 0 auto -90px auto;
+      border: 4px solid $mainBlue;
+    }    
+
+    @mixin atMedium {
+      width: 240px;
+      margin: 0 auto -120px auto;
+      border: 6px solid $mainBlue;
+    }    
+
+    @mixin atLarge {
+      width: 300px;
+      margin: 0 auto -150px auto;
+      border: 8px solid $mainBlue;
+    }    
+  }
+
+  &__text-content {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 200;
+
+    @mixin atSmall {
+      font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1.5rem;
+    }
+
+    @mixin atLarge {
+      font-size: 1.8rem;
+    }
+  }
+}
