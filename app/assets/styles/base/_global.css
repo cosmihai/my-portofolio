@@ -27,7 +27,7 @@ hr {
   margin: 0;
   border: none;
   height: 2px;
-  background-color: rgb(5, 49, 90);
+  background-color: $mainBlue;
 
   @mixin atSmall {
     height: 4px;

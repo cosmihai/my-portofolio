@@ -1,5 +1,6 @@
 .introduction {
   background-color: rgb(244, 248, 255);
+  padding-bottom: 2em;
 
   &__my-photo {
     width: 100px;
@@ -30,9 +31,7 @@
   }
 
   &__text-content {
-    max-width: 1200px;
     text-align: center;
-    margin: 0 auto;
     font-weight: 200;
 
     @mixin atSmall {
