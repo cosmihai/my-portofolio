@@ -1,0 +1,37 @@
+.card {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid $mainBlueLight;
+
+  &__title {
+    color: $mainBlue;
+    font-weight: 300;
+  }
+
+  &__subtitle {
+    font-weight: 100;
+    line-height: 1.5
+  }
+
+
+  @mixin atMedium {
+    width: 240px;
+    border: 1px solid $mainBlueLight;
+    padding: 3em 0;
+
+    &--trespassing {
+      background-color: white;
+      transform: translateY(-6rem);
+      margin-bottom: -6rem;
+    }
+
+    &__title {
+      font-size: 1.75rem;
+    }
+
+    &__subtitle {
+      font-size: 1.25rem;
+      line-height: 3
+    }
+  }
+}

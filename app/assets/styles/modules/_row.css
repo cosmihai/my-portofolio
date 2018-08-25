@@ -1,0 +1,10 @@
+.row {
+  
+  display: flex;
+  flex-direction: column;
+
+  @mixin atMedium {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
