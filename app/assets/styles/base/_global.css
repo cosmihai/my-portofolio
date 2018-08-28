@@ -1,9 +1,5 @@
-html {
+* {
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 body {
@@ -46,7 +42,7 @@ hr {
 }
 
 @mixin atMedium {
-  #hr--thin {
+  .hr--thin {
     height: 1px;
     background-color: $mainBlueLight;
   }
@@ -55,4 +51,9 @@ hr {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $mainBlue;
 }

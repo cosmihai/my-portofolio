@@ -1,6 +1,6 @@
 .wrapper {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin: 0 auto;
 
   &--small {
@@ -8,6 +8,7 @@
   }
 
   &--large {
-    max-width: 1200px;
+    max-width: 1600px;
   }
+
 }

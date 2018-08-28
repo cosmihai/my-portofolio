@@ -2,36 +2,69 @@
   text-align: center;
   padding: 1em 0;
   border-bottom: 1px solid $mainBlueLight;
+  background-color: white;
+
+  &--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
 
   &__title {
     color: $mainBlue;
     font-weight: 300;
+    margin-bottom: 1em;
   }
 
   &__subtitle {
     font-weight: 100;
-    line-height: 1.5
+
+    &--line-height-big {
+      line-height: 3em;
+    }
   }
 
+  &__poster {
+    width: 50%;
+    margin: 0 auto;
+  }
 
   @mixin atMedium {
-    width: 240px;
+    width: 35%;
     border: 1px solid $mainBlueLight;
-    padding: 3em 0;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px $mainBlueLight;
+    margin-bottom: 4rem;
+
+    &--narrow {
+      width: 240px;
+      padding: 3em 0;
+    }
 
     &--trespassing {
-      background-color: white;
       transform: translateY(-6rem);
       margin-bottom: -6rem;
     }
 
     &__title {
-      font-size: 1.75rem;
+      font-size: 1.4rem;
     }
 
     &__subtitle {
-      font-size: 1.25rem;
-      line-height: 3
+      font-size: 1.1rem;
+    }
+  }
+
+  @mixin atLarge {
+    padding: 4em 0;
+    width: 20%;
+    &__title {
+      font-size: 1.6rem;
+    }
+
+    &__subtitle {
+      font-size: 1.4rem;
     }
   }
 }

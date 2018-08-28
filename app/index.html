@@ -8,6 +8,7 @@
   <title>My web</title>
 </head>
 <body>
+
   <header>
 
     <img src="assets/images/logo-smallest.png" alt="personal-logo" width="150px">
@@ -39,58 +40,106 @@
   </header>
   
   <hr>
+
   <div>
+
     <section class="introduction">
+
       <div class="introduction__my-photo">
         <img src="assets/images/cv-picture.jpg" alt="my-picture">
       </div>
+
       <div class="introduction__text-content wrapper">
         <p>Hi, I'm Mihai.Nice to meet you!</p>
         <p>I started my journey as a web developer in January 2018. After studying the basis of JavaScript by myself, in March I joined the Ironhack bootcamp in Barcelona where, for 9 intensive weeks, I have studied web development.</p>
       </div>
+
     </section>
-    <hr id="hr--thin">
-    <section class="section wrapper wrapper--large row">
-      <div class="wrapper card card--trespassing">
+
+    <hr class="hr--thin">
+
+    <section class="section section--b-margin section--b-padding wrapper wrapper--large row row--center">
+
+      <div class="wrapper card card--trespassing card--narrow">
+
         <h2 class="card__title">FRONT-END</h2>
-        <ul class="card__subtitle">
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
           <li>HTML5</li>
           <li>CSS3</li>
           <li>JAVASCRIPT</li>
           <li>ANGULAR</li>
         </ul>
+
       </div>
-      <div class="wrapper card card--trespassing">
+
+      <div class="wrapper card card--trespassing card--narrow">
+
         <h2 class="card__title">BACK-END</h2>
-        <ul class="card__subtitle">
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
           <li>NODE.JS</li>
           <li>EXPRESS.JS</li>
           <li>MONGODB</li>
         </ul>
+
       </div>
-      <div class="wrapper card card--trespassing">
+
+      <div class="wrapper card card--trespassing card--narrow">
+
         <h2 class="card__title">OTHER SKILLS</h2>
-        <ul class="card__subtitle">
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
           <li>GIT</li>
           <li>GULP</li>
           <li>WEBPACK</li>
         </ul>
+
       </div>
+
     </section>
-    <hr>
-    <section>
-      <img src="assets/images/coding-wallpaper-1920x1200-for-1080p-WTG3036891.jpg" alt="code-bckg-2">
-      <h1>My recent work</h1>
-      <div>
-        <img src="assets/images/find-the-mole-poster.jpg" alt="project-1">
+
+    <hr class="hr--thin">
+
+    <section class="my-work">
+
+      <picture>
+        <source srcset="assets/images/coding-wallpaper-1920x1200-for-1080p-WTG3036891.jpg" media="(min-width: 1200px)">
+        <source srcset="assets/images/wp1828918-programmer-wallpapers-medium-portrait.jpg" media="(min-width: 800px)">
+        <img class="my-work__background-image" src="assets/images/coding-wallpaper-1920x1200-for-1080p-WTG3036891.jpg" alt="code-bckg-2">
+      </picture>
+
+
+      <h1 class="my-work__title">My recent work</h1>
+      <div class="my-work__content">
+        <div class="section section--t-padding-big wrapper wrapper--large row row--center">
+          
+          <a class="card card--flex" href="https://cosmihai.github.io/game-project/" target="_blank">
+  
+            <p class="wrapper card__title"> A small JavaScript game made with canvas</p>
+            <p class="card__subtitle">- desktop only -</p>  
+            <img class="card__poster" src="assets/images/find-the-mole-poster.jpg" alt="project-1">
+          </a>
+  
+          <a class="card card--flex" href="https://catch-the-light.herokuapp.com/" target="_blank">
+            <p class="wrapper card__title"> App made only with Node.js and Express framework</p>
+            <img class="card__poster" src="assets/images/catch-the-light-poster.jpg" alt="project-2">
+          </a>
+  
+          <a class="card card--flex" href="https://liquidworld.herokuapp.com/" target="_blank">
+            <p class="wrapper card__title"> App made on client side with Angular2 and on the server side with Node.js</p>
+            <img class="card__poster" src="assets/images/liquid-world-poster.jpg" alt="project-3">
+          </a>
+  
+          <a class="card card--flex" href="https://liquidworld.herokuapp.com/" target="_blank">
+            <p class="wrapper card__title"> App made on client side with Angular2 and on the server side with Node.js</p>
+            <img class="card__poster" src="assets/images/liquid-world-poster.jpg" alt="project-3">
+          </a>
+        </div>
       </div>
-      <div>
-        <img src="assets/images/catch-the-light-poster.jpg" alt="project-2">
-      </div>
-      <div>
-        <img src="assets/images/liquid-world-poster.jpg" alt="project-3">
-      </div>
+
     </section>
+
   </div>
 
   <footer>

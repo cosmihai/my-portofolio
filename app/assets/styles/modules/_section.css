@@ -1,4 +1,22 @@
 .section {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+
+  &--t-padding-big {
+    
+    @mixin atMedium {
+      padding-top: 6rem
+    }
+  }
+
+  &--b-padding {
+    padding-bottom: 3rem;
+  }
+
+  &--b-margin {
+    margin-bottom: 3rem;
+
+    @mixin atLarge {
+      margin-bottom: 9rem;
+    }
+  }
 }
