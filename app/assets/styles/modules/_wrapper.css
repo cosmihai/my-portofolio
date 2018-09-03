@@ -3,6 +3,11 @@
   padding-right: 8px;
   margin: 0 auto;
 
+  @mixin atSmall {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
   &--small {
     max-width: 800px;
   }

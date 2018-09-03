@@ -6,17 +6,18 @@ module.exports = {
     path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "App.js"
   },
-  // babel integration
-  // module: {
-  //   rules: [
-  //     {
-  //       loader: 'babel-loader',
-  //       query: {
-  //         presets: ['es2015']
-  //       },
-  //       test: /\.js$/,
-  //       exclude: /node_modules/
-  //     }
-  //   ]
-  // }
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
+        }
+      }
+    ]
+  }
 }
