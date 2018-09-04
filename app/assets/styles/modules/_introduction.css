@@ -9,30 +9,34 @@
     border-radius: 50%;
     position: relative;
     transform: translateY(-50%);
-    border: 2px solid $mainBlue;
+    border: 2px solid $mainBlueLight;
 
     @mixin atSmall {
-      width: 130px;
+      width: 120px;
       margin: 0 auto -50px auto;
-      border: 4px solid $mainBlue;
+      border: 2px solid $mainBlueLight;
     }    
 
     @mixin atMedium {
-      width: 210px;
-      margin: 0 auto -105px auto;
-      border: 6px solid $mainBlue;
+      width: 180px;
+      margin: 0 auto;
+      border: 3px solid $mainBlueLight;
     }    
 
     @mixin atLarge {
-      width: 300px;
-      margin: 0 auto -150px auto;
-      border: 8px solid $mainBlue;
+      width: 260px;
+      margin: 0 auto;
+      border: 4px solid $mainBlueLight;
     }    
   }
 
   @mixin atMedium {
-    height: 600px;
+    height: 400px;
     position: relative;
+  }
+
+  @mixin atLarge {
+    height: 600px;
   }
 
   &__text-content {

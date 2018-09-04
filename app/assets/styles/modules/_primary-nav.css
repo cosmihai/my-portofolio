@@ -1,0 +1,35 @@
+.primary-nav {
+  float: right;
+  padding-right: 2%;
+  font-size: 0.75rem;
+  font-weight: 200;
+
+  @mixin atMedium {
+    font-size: 1rem
+  }
+
+  ul {
+    margin: 0.5rem 0;
+
+    @mixin atSmall {
+      margin: 0.75rem 0;
+    }
+
+    @mixin atMedium {
+      margin: 1rem 0;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+
+  a {
+    color: #FFF;
+  }
+}
+
+.clear {
+  clear: both;
+}

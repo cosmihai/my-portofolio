@@ -25,19 +25,14 @@ hr {
   margin: 0;
   border: none;
   height: 2px;
-  background-color: $mainBlue;
-  z-index: -100;
-
-  @mixin atSmall {
-    height: 4px;
-  }
+  background-color: $mainBlueLight;
 
   @mixin atMedium {
-    height: 6px;
+    height: 3px;
   }
 
   @mixin atLarge {
-    height: 8px;
+    height: 4px;
   }
 }
 
@@ -51,6 +46,7 @@ hr {
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 a {

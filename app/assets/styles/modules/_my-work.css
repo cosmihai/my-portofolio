@@ -7,7 +7,7 @@
     font-size: 1.2rem;
     color: $mainBlue;
     text-shadow: 2px 2px 3px grey;
-    border: 2px solid $mainBlue;
+    border: 2px solid $mainBlueLight;
     border-radius: 26px;
     background-color: white;
     top: 0;
@@ -15,7 +15,6 @@
     transform: translate(-50%, -50%);
 
     @mixin atMedium {
-      border: 2px solid $mainBlueLight;
       font-size: 1.8rem;
       font-weight: 300;
     }

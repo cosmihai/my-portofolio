@@ -10,17 +10,23 @@
 <body>
 
   <header>
+    <div class="site-header">
+      
+      <div class="site-header__logo">
+        <img src="assets/images/logo-smallest.png" alt="personal-logo">
+      </div>
+  
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My Work</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+      <div class="clear"></div>
 
-    <img src="assets/images/logo-smallest.png" alt="personal-logo" width="150px">
-
-    <nav>
-      <ul>
-        <li>About Me</li>
-        <li>My Projects</li>
-        <li>Contact Me</li>
-      </ul>
-    </nav>
-
+    </div>
+    
     <div class="general-presentation">
 
       <img alt="code-backround" srcset="assets/images/code-background-small.jpg 500w, assets/images/code-background-medium.jpg 800w, assets/images/code-background.jpg 1280w, assets/images/code-background-crop-large.jpg 1600w">
@@ -36,7 +42,6 @@
       </div>
       
     </div>
-    
   </header>
   
   <hr>
@@ -45,7 +50,7 @@
 
     <section class="introduction">
 
-      <div class="introduction__my-photo">
+      <div id="about-me"  class="introduction__my-photo">
         <img src="assets/images/cv-picture.jpg" alt="my-picture">
       </div>
 
@@ -110,7 +115,7 @@
       </picture>
 
 
-      <h1 class="my-work__title">My recent work</h1>
+      <h1 id="my-projects" class="my-work__title">My recent work</h1>
       <div class="my-work__content">
         <div class="section section--t-padding-big wrapper wrapper--large row row--center">
           

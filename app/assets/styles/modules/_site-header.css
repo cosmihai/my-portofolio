@@ -1,0 +1,34 @@
+.site-header {  
+  position: relative;
+  background-color: $mainBlue;
+  border-bottom: 2px solid #FFF;
+
+  &__logo {
+    float: left;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 35%;
+    padding: 0.5rem 1rem;
+    background-color: #FFF;
+    z-index: 2;
+    border: 1px solid $mainBlue;
+    border-radius: 0 0 5px 5px;
+    /* box-shadow: -2px -2px 5px white; */
+
+    @mixin atSmall {
+      width: 25%;
+      padding: .75rem 1.25rem;
+    }
+
+    @mixin atMedium {
+      width: 20%;
+      padding: 1rem 1.5rem;
+    }
+
+    @mixin atLarge {
+      width: 15%;
+      padding: 1.25rem 1.75rem;
+    }
+  }
+}
