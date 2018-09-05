@@ -1,23 +1,29 @@
 .primary-nav {
-  float: right;
-  padding-right: 2%;
+  padding-right: 8px;
   font-size: 0.75rem;
-  font-weight: 200;
+  font-weight: 100;
+  display: none;
 
-  @mixin atMedium {
+  &--pull-right {
+    float: right;
+  }
+
+  @mixin atSmall {
     font-size: 1rem
   }
 
+  @mixin atMedium {
+    padding-right: 18px;
+    font-size: 1.25rem;
+    display: block;
+  }
+
+  @mixin atLarge {
+    font-size: 1.5rem
+  }
+
   ul {
-    margin: 0.5rem 0;
-
-    @mixin atSmall {
-      margin: 0.75rem 0;
-    }
-
-    @mixin atMedium {
-      margin: 1rem 0;
-    }
+    margin: 0.6em 0;
   }
 
   li {
@@ -28,8 +34,4 @@
   a {
     color: #FFF;
   }
-}
-
-.clear {
-  clear: both;
 }

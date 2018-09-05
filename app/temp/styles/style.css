@@ -357,6 +357,11 @@ h1 {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -399,7 +404,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: rgb(5, 49, 90);
+  color: #05315a;
 }
 
 .general-presentation {
@@ -417,30 +422,31 @@ a {
     left: 0;
     width: 100%;
     text-align: center;
+    color: #05315a;
+    font-weight: 300;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%) 
   }
 
 .general-presentation__title {
+    font-size: 1.6rem;
     font-weight: 300;
-    color: rgb(5, 49, 90);
-    font-size: 1.8rem;
-    margin-bottom: .6rem;
+    margin-bottom: .5rem;
   }
 
 @media (min-width: 540px) {
 
 .general-presentation__title {
-      font-size: 2.4rem;
-      margin-bottom: 1.2rem
+      font-size: 2rem;
+      margin-bottom: 1rem
   }
   }
 
 @media (min-width: 800px) {
 
 .general-presentation__title {
-      font-size: 3.2rem;
-      margin-bottom: 2.4rem
+      font-size: 2.8rem;
+      margin-bottom: 2rem
   }
   }
 
@@ -453,22 +459,20 @@ a {
   }
 
 .general-presentation__subtitle {
-    font-weight: 300;
-    color: rgb(5, 49, 90);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
 @media (min-width: 540px) {
 
 .general-presentation__subtitle {
-      font-size: 1.6rem
+      font-size: 1.4rem
   }
   }
 
 @media (min-width: 800px) {
 
 .general-presentation__subtitle {
-      font-size: 2.1rem
+      font-size: 1.8rem
   }
   }
 
@@ -650,7 +654,7 @@ a {
   }
 
 .card__title {
-    color: rgb(5, 49, 90);
+    color: #05315a;
     font-weight: 300;
     margin-bottom: 1em;
   }
@@ -721,7 +725,7 @@ a {
     position: absolute;
     padding: .5em 1em;
     font-size: 1.2rem;
-    color: rgb(5, 49, 90);
+    color: #05315a;
     text-shadow: 2px 2px 3px grey;
     border: 2px solid rgba(5, 49, 90, 0.1);
     border-radius: 26px;
@@ -772,30 +776,44 @@ a {
   }
 
 .site-header {  
-  position: relative;
-  background-color: rgb(5, 49, 90);
-  border-bottom: 2px solid #FFF;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(5,49,90, .8);
 }
+
+.site-header::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media (min-width: 800px) {
+
+.site-header {
+    border-bottom: 2px solid #FFF
+}
+  }
 
 .site-header__logo {
     float: left;
     position: absolute;
-    top: 10%;
-    left: 2%;
-    width: 35%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 180px;
     padding: 0.5rem 1rem;
-    background-color: #FFF;
+    /* background-color: rgba($mainBlue, .1); */
     z-index: 2;
-    border: 1px solid rgb(5, 49, 90);
+    /* border: 1px solid $mainBlueLight; */
     border-radius: 0 0 5px 5px;
   }
-
-/* box-shadow: -2px -2px 5px white; */
 
 @media (min-width: 540px) {
 
 .site-header__logo {
-      width: 25%;
+      width: 260px;
       padding: .75rem 1.25rem
   }
   }
@@ -803,49 +821,77 @@ a {
 @media (min-width: 800px) {
 
 .site-header__logo {
-      width: 20%;
-      padding: 1rem 1.5rem
+      top: 18px;
+      left: 18px;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      width: 160px;
+      padding: 1rem 1.5rem;
+      background-color: #FFF;
+      border: 1px solid #05315a
   }
   }
 
 @media (min-width: 1200px) {
 
 .site-header__logo {
-      width: 15%;
+      width: 200px;
       padding: 1.25rem 1.75rem
   }
   }
 
-.primary-nav {
-  float: right;
-  padding-right: 2%;
-  font-size: 0.75rem;
-  font-weight: 200;
-}
+.site-header__menu-icon {
+    width: 26px;
+    height: 26px;
+    background-color: #FFF;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
 
 @media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
+.primary-nav {
+  padding-right: 8px;
+  font-size: 0.75rem;
+  font-weight: 100;
+  display: none;
+}
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+@media (min-width: 540px) {
 
 .primary-nav {
     font-size: 1rem
 }
   }
 
-.primary-nav ul {
-    margin: 0.5rem 0;
-  }
-
-@media (min-width: 540px) {
-
-.primary-nav ul {
-      margin: 0.75rem 0
-  }
-  }
-
 @media (min-width: 800px) {
 
-.primary-nav ul {
-      margin: 1rem 0
+.primary-nav {
+    padding-right: 18px;
+    font-size: 1.25rem;
+    display: block
+}
   }
+
+@media (min-width: 1200px) {
+
+.primary-nav {
+    font-size: 1.5rem
+}
+  }
+
+.primary-nav ul {
+    margin: 0.6em 0;
   }
 
 .primary-nav li {
@@ -856,10 +902,6 @@ a {
 .primary-nav a {
     color: #FFF;
   }
-
-.clear {
-  clear: both;
-}
 
 
 

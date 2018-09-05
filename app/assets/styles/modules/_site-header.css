@@ -1,34 +1,58 @@
 .site-header {  
-  position: relative;
-  background-color: $mainBlue;
-  border-bottom: 2px solid #FFF;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba($mainBlue, .8);
+  @mixin clearfix;
+
+  @mixin atMedium {
+    border-bottom: 2px solid #FFF;
+  }
 
   &__logo {
     float: left;
     position: absolute;
-    top: 10%;
-    left: 2%;
-    width: 35%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
     padding: 0.5rem 1rem;
-    background-color: #FFF;
+    /* background-color: rgba($mainBlue, .1); */
     z-index: 2;
-    border: 1px solid $mainBlue;
+    /* border: 1px solid $mainBlueLight; */
     border-radius: 0 0 5px 5px;
-    /* box-shadow: -2px -2px 5px white; */
 
     @mixin atSmall {
-      width: 25%;
+      width: 260px;
       padding: .75rem 1.25rem;
     }
 
     @mixin atMedium {
-      width: 20%;
+      top: 18px;
+      left: 18px;
+      transform: translateX(0);
+      width: 160px;
       padding: 1rem 1.5rem;
+      background-color: #FFF;
+      border: 1px solid $mainBlue;
     }
 
     @mixin atLarge {
-      width: 15%;
+      width: 200px;
       padding: 1.25rem 1.75rem;
+    }
+  }
+
+  &__menu-icon {
+    width: 26px;
+    height: 26px;
+    background-color: #FFF;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    @mixin atMedium {
+      display: none;
     }
   }
 }

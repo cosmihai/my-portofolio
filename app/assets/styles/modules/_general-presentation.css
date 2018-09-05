@@ -12,23 +12,24 @@
     left: 0;
     width: 100%;
     text-align: center;
+    color: $mainBlue;
+    font-weight: 300;
     transform: translateY(-50%) 
   }
 
   &__title {
+    font-size: 1.6rem;
     font-weight: 300;
-    color: $mainBlue;
-    font-size: 1.8rem;
-    margin-bottom: .6rem;
+    margin-bottom: .5rem;
 
     @mixin atSmall {
-      font-size: 2.4rem;
-      margin-bottom: 1.2rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
     @mixin atMedium {
-      font-size: 3.2rem;
-      margin-bottom: 2.4rem;
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
     }
 
     @mixin atLarge {
@@ -38,16 +39,14 @@
   }
 
   &__subtitle {
-    font-weight: 300;
-    color: $mainBlue;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     @mixin atSmall {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
 
     @mixin atMedium {
-      font-size: 2.1rem;
+      font-size: 1.8rem;
     }
 
     @mixin atLarge {

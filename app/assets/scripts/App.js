@@ -1,5 +1,3 @@
-const Person = require('./modules/test');
+import MobileMenu from './modules/MobileMenu';
 
-const mihai = new Person('mihai', 'blue');
-
-console.log(mihai.color)
+const mobileMenu =  new MobileMenu();
