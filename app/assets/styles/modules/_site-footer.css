@@ -1,0 +1,11 @@
+.site-footer {
+  background-color: $mainBlue;
+  color: #FFF;
+  padding: .5rem;
+  font-size: .8rem;
+  font-weight: 200;
+
+  @mixin atMedium {
+    font-size: 1.1rem;
+  }
+}
