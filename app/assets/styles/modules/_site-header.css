@@ -117,7 +117,7 @@
 
   &__menu-content {
     opacity: 0;
-    transform: scale(1.5);
+    transform: scale(1);
     transition: all .4s ease-out;
     position: relative;
     z-index: -10;
@@ -137,7 +137,7 @@
 
     &--is-visible {
       opacity: 1;
-      transform: scale(1);
+      transform: scale(.8);
       z-index: 3;
     }
 

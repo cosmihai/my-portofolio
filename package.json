@@ -26,6 +26,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "waypoints": "^4.0.1"
   }
 }

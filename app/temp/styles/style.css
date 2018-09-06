@@ -655,6 +655,11 @@ a {
     justify-content: space-between;
   }
 
+/* &--running {
+    position: relative;
+    left: -100%;
+  } */
+
 .card__title {
     color: #05315a;
     font-weight: 300;
@@ -762,10 +767,10 @@ a {
       position: absolute;
       top: 50%;
       left: 0;
-      width: 100%;
-      text-align: center;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); 
+      width: 100%;
+      text-align: center;
     }
   }
 
@@ -925,8 +930,8 @@ a {
 
 .site-header__menu-content {
     opacity: 0;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1);
+            transform: scale(1);
     transition: all .4s ease-out;
     position: relative;
     z-index: -10;
@@ -957,13 +962,13 @@ a {
 
 .site-header__menu-content--is-visible {
       opacity: 1;
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: scale(.8);
+              transform: scale(.8);
       z-index: 3;
     }
 
 .primary-nav {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -977,7 +982,7 @@ a {
 @media (min-width: 540px) {
 
 .primary-nav {
-    font-size: 1.25rem
+    font-size: 1.5rem
 }
   }
 
@@ -1015,6 +1020,26 @@ a {
 
 .primary-nav a {
     color: #FFF;
+  }
+
+.reveal-item {
+  opacity: 0;
+  transition: all 1.5s ease-out;
+
+}
+
+.reveal-item.card--flex {
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+  }
+
+.reveal-item--is-visible {
+    opacity: 1;
+  }
+
+.reveal-item--is-visible.card--flex {
+    -webkit-transform: scale(1);
+            transform: scale(1)
   }
 
 

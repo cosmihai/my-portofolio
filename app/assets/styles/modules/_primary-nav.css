@@ -1,5 +1,5 @@
 .primary-nav {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 
   &--pull-right {
@@ -10,7 +10,7 @@
   }
 
   @mixin atSmall {
-    font-size: 1.25rem
+    font-size: 1.5rem
   }
 
   @mixin atMedium {
