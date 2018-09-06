@@ -1,5 +1,10 @@
 .section {
+
   padding-top: 3rem;
+
+  &--t-padding-none {
+    padding-top: 0;
+  }
 
   &--t-padding-big {
     

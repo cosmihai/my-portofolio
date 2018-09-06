@@ -23,8 +23,8 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-projects">My Work</a></li>
+            <li><a href="#about-me" id="about-me-link">About Me</a></li>
+            <li><a href="#my-projects" id="my-projects-link">My Work</a></li>
             <li><a href="#">Contact Me</a></li>
           </ul>
         </nav>
@@ -60,7 +60,7 @@
         <img src="assets/images/cv-picture.jpg" alt="my-picture">
       </div>
 
-      <div class="introduction__text-content">
+      <div class="section section--t-padding-none introduction__text-content" data-matching-link="#about-me-link">
         <p class="wrapper">Hi, I'm Mihai.Nice to meet you!</p>
         <p class="wrapper wrapper--small">I started my journey as a web developer in January 2018. After studying the basis of JavaScript by myself, in March I joined the Ironhack bootcamp in Barcelona where, for 9 intensive weeks, I have studied web development.</p>
       </div>
@@ -123,7 +123,7 @@
 
       <h1 id="my-projects" class="my-work__title">My recent work</h1>
       <div class="my-work__content">
-        <div class="section section--t-padding-big wrapper wrapper--large row row--center">
+        <div class="section section--t-padding-big wrapper wrapper--large row row--center" data-matching-link="#my-projects-link">
           
           <a class="card card--flex test" href="https://cosmihai.github.io/game-project/" target="_blank">
   

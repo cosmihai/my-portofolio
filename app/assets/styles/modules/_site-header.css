@@ -10,7 +10,8 @@
   }
 
   @mixin atMedium {
-    z-index: 2;
+    position: fixed;
+    z-index: 4;
     border-bottom: 2px solid #FFF;
     background-color: rgba($mainBlue, .9);
   }

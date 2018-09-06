@@ -38,5 +38,11 @@
 
   a {
     color: #FFF;
+
+    @mixin atMedium {
+      &.is-current-link {
+        color: #fabb69;
+      }
+    }
   }
 }
