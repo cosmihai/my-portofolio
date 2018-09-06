@@ -1,25 +1,28 @@
 .site-header {  
   position: absolute;
   width: 100%;
-  z-index: 2;
-  background-color: rgba($mainBlue, .8);
+  transition: background-color .4s ease-out;
   @mixin clearfix;
 
-  @mixin atMedium {
-    border-bottom: 2px solid #FFF;
+  &--is-expanded {
+    background-color: rgba($mainBlue, .9);
+    z-index: 3;
   }
 
+  @mixin atMedium {
+    z-index: 2;
+    border-bottom: 2px solid #FFF;
+    background-color: rgba($mainBlue, .9);
+  }
+
+
   &__logo {
-    float: left;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 180px;
     padding: 0.5rem 1rem;
-    /* background-color: rgba($mainBlue, .1); */
-    z-index: 2;
-    /* border: 1px solid $mainBlueLight; */
     border-radius: 0 0 5px 5px;
 
     @mixin atSmall {
@@ -28,6 +31,7 @@
     }
 
     @mixin atMedium {
+      float: left;
       top: 18px;
       left: 18px;
       transform: translateX(0);
@@ -46,13 +50,96 @@
   &__menu-icon {
     width: 26px;
     height: 26px;
-    background-color: #FFF;
     position: absolute;
     top: 12px;
     right: 12px;
+    z-index: 4;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 26px;
+      height: 4px;
+      background-color: $mainBlue;
+      transform-origin: 0 0;
+      transition: transform .4s ease-out;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 11px;
+      left: 0;
+      width: 26px;
+      height: 4px;
+      background-color: $mainBlue;
+      transition: all .4s ease-out; 
+      transform-origin: 0 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 26px;
+      height: 4px;
+      background-color: $mainBlue;
+      transform-origin: 0 100%;
+      transition: transform .4s ease-out;
+    }
 
     @mixin atMedium {
       display: none;
     }
+  }
+
+  &__menu-icon--close-x {
+
+    &::before {
+      background-color: white;
+      transform: rotate(45deg) scaleX(1.25);
+
+    }
+
+    .site-header__menu-icon__middle {
+      background-color: white;
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    &::after {
+      background-color: white;
+      transform: rotate(-45deg) scaleX(1.25);
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all .4s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 50px;
+    text-align: center;
+
+    @mixin atSmall {
+      padding-top: 90px;
+    }
+
+    @mixin atMedium {
+      opacity: 1;
+      transform: scale(1);
+      padding-top: 0;
+      z-index: 1  ;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      transform: scale(1);
+      z-index: 3;
+    }
+
   }
 }

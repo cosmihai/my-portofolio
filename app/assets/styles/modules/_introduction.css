@@ -8,6 +8,7 @@
     margin: 0 auto -40px auto;
     border-radius: 50%;
     position: relative;
+    z-index: 2;
     transform: translateY(-50%);
     border: 2px solid $mainBlueLight;
 
