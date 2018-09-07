@@ -58,3 +58,7 @@ a {
   text-decoration: none;
   color: $mainBlue;
 }
+
+strong {
+  font-weight: 800;
+}

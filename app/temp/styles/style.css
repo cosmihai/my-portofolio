@@ -407,6 +407,10 @@ a {
   color: #05315a;
 }
 
+strong {
+  font-weight: 800;
+}
+
 .general-presentation {
   position: relative;
   z-index: 1;
@@ -422,66 +426,8 @@ a {
     top: 50%;
     left: 0;
     width: 100%;
-    text-align: center;
-    color: #05315a;
-    font-weight: 300;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%) 
-  }
-
-.general-presentation__title {
-    font-size: 1.6rem;
-    font-weight: 300;
-    margin-bottom: .5rem;
-  }
-
-@media (min-width: 540px) {
-
-.general-presentation__title {
-      font-size: 2rem;
-      margin-bottom: 1rem
-  }
-  }
-
-@media (min-width: 800px) {
-
-.general-presentation__title {
-      font-size: 2.8rem;
-      margin-bottom: 2rem
-  }
-  }
-
-@media (min-width: 1200px) {
-
-.general-presentation__title {
-      font-size: 4.8rem;
-      margin-bottom: 2.8rem
-  }
-  }
-
-.general-presentation__subtitle {
-    font-size: 1.1rem;
-  }
-
-@media (min-width: 540px) {
-
-.general-presentation__subtitle {
-      font-size: 1.4rem
-  }
-  }
-
-@media (min-width: 800px) {
-
-.general-presentation__subtitle {
-      font-size: 1.8rem
-  }
-  }
-
-@media (min-width: 1200px) {
-
-.general-presentation__subtitle {
-      font-size: 2.4rem
-  }
   }
 
 .introduction {
@@ -647,6 +593,119 @@ a {
   }
   }
 
+.section-title {
+
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+  text-align: center;
+  color: #05315a;
+  font-weight: 300;
+
+}
+
+.section-title--no-t-margin {
+    margin-top: 0;
+  }
+
+.section-title__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .6rem;
+    -webkit-transform: scale(.8);
+            transform: scale(.8);
+
+  }
+
+@media (min-width: 540px) {
+
+.section-title__icon {
+      position: relative;
+      top: 12px;
+      margin-right: .5rem;
+      margin-left: 0;
+      margin-bottom: 0;
+      display: inline-block
+
+  }
+  }
+
+@media (min-width: 800px) {
+
+.section-title__icon {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      top: 9px
+
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.section-title__icon {
+      top: -2px;
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2)
+
+  }
+  }
+
+@media (min-width: 540px) {
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem
+
+}
+  }
+
+@media (min-width: 800px) {
+
+.section-title {
+    font-size: 2.8rem;
+    margin-bottom: 2rem
+
+}
+  }
+
+@media (min-width: 1200px) {
+
+.section-title {
+    font-size: 4.8rem;
+    margin-bottom: 2.8rem
+
+}
+  }
+
+.section-subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #05315a;
+  font-weight: 300;
+}
+
+@media (min-width: 540px) {
+
+.section-subtitle {
+    font-size: 1.4rem
+}
+  }
+
+@media (min-width: 800px) {
+
+.section-subtitle {
+    font-size: 1.8rem
+}
+  }
+
+@media (min-width: 1200px) {
+
+.section-subtitle {
+    font-size: 2.4rem
+}
+  }
+
 .card {
   text-align: center;
   padding: 1em 0;
@@ -659,11 +718,6 @@ a {
     flex-direction: column;
     justify-content: space-between;
   }
-
-/* &--running {
-    position: relative;
-    left: -100%;
-  } */
 
 .card__title {
     color: #05315a;
@@ -1068,6 +1122,53 @@ a {
     font-size: 1.1rem
 }
   }
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: all .3s ease-out;
+}
+
+.modal--is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+.modal__content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.3);
+            transform: scaleX(1.3);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #05315a;
+    cursor: pointer;
+  }
+
+.modal__close:hover {
+      color: red;
+    }
 
 
 

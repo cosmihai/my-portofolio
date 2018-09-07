@@ -7,12 +7,15 @@
 @import "modules/_wrapper";
 @import "modules/_row";
 @import "modules/_section";
+@import "modules/_section-title";
+@import "modules/_section-subtitle";
 @import "modules/_card";
 @import "modules/_my-work";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
 @import "modules/_site-footer";
+@import "modules/_modal";
 
 
 
