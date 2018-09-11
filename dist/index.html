@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ <link rel="stylesheet" href="/assets/styles/style-7bca9352ed.css"/>
+  <title>My web</title>
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      
+      <div class="site-header__logo">
+        <img src="assets/images/logo-smallest.png" alt="personal-logo">
+      </div>
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+
+      <div class="site-header__menu-content">
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#about-me" id="about-me-link">About Me</a></li>
+            <li><a href="#my-projects" id="my-projects-link">My Work</a></li>
+            <li><a class="open-modal" href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+    
+    <div class="general-presentation">
+
+      <img alt="code-backround" srcset="assets/images/code-background-small.jpg 500w, assets/images/code-background-medium.jpg 800w, assets/images/code-background.jpg 1280w, assets/images/code-background-crop-large.jpg 1600w">
+
+      
+      <div class="general-presentation__text-content">
+        <div class="wrapper">
+          <h1 class="section-title" >Full stack web developer</h1>
+        </div>
+        <div class="wrapper wrapper--small">
+          <p class="section-subtitle" >I'm a fast learner passionate about web development looking to improve my programing skills every day</p>
+        </div>
+      </div>
+      
+    </div>
+  </header>
+  
+  <hr>
+
+  <div>
+
+    <section class="introduction">
+
+      <div id="about-me"  class="introduction__my-photo">
+        <img src="assets/images/cv-picture.jpg" alt="my-picture">
+      </div>
+
+      <div class="section section--t-padding-none introduction__text-content" data-matching-link="#about-me-link">
+        <p class="wrapper">Hi, I'm Mihai.Nice to meet you!</p>
+        <p class="wrapper wrapper--small">I started my journey as a web developer in January 2018. After studying the basis of JavaScript by myself, in March I joined the Ironhack bootcamp in Barcelona where, for 9 intensive weeks, I have studied web development.</p>
+      </div>
+
+    </section>
+
+    <hr class="hr--thin">
+
+    <section class="section section--b-margin section--b-padding wrapper wrapper--large row row--center">
+
+      <div class="wrapper card card--trespassing card--narrow">
+
+        <h2 class="card__title">FRONT-END</h2>
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JAVASCRIPT</li>
+          <li>ANGULAR2+</li>
+        </ul>
+
+      </div>
+
+      <div class="wrapper card card--trespassing card--narrow">
+
+        <h2 class="card__title">BACK-END</h2>
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
+          <li>NODE.JS</li>
+          <li>EXPRESS.JS</li>
+          <li>MONGODB</li>
+        </ul>
+
+      </div>
+
+      <div class="wrapper card card--trespassing card--narrow">
+
+        <h2 class="card__title">OTHER SKILLS</h2>
+
+        <ul class="card__subtitle card__subtitle--line-height-big">
+          <li>GIT</li>
+          <li>GULP</li>
+          <li>WEBPACK</li>
+          <li>BABEL</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <hr class="hr--thin">
+
+    <section class="my-work">
+
+      <picture>
+        <source srcset="assets/images/coding-wallpaper-1920x1200-for-1080p-WTG3036891.jpg" media="(min-width: 1200px)">
+        <source srcset="assets/images/wp1828918-programmer-wallpapers-medium-portrait.jpg" media="(min-width: 800px)">
+        <img class="my-work__background-image" src="assets/images/coding-wallpaper-1920x1200-for-1080p-WTG3036891.jpg" alt="code-bckg-2">
+      </picture>
+
+
+      <h1 id="my-projects" class="my-work__title">My recent work</h1>
+      <div class="my-work__content">
+        <div class="section section--t-padding-big wrapper wrapper--large row row--center" data-matching-link="#my-projects-link">
+          
+          <a class="card card--flex test" href="https://github.com/cosmihai/my-portofolio" target="_blank">
+            <p class="wrapper card__title"> See the code for this site</p>
+            <img class="card__poster" src="assets/images/logo-small.png" alt="project-3">
+          </a>
+          <a class="card card--flex test" href="https://cosmihai.github.io/game-project/" target="_blank">
+  
+            <p class="wrapper card__title"> A small JavaScript game made with canvas</p>
+            <p class="card__subtitle">- desktop only -</p>  
+            <img class="card__poster" src="assets/images/find-the-mole-poster.jpg" alt="project-1">
+          </a>
+  
+          <a class="card card--flex test" href="https://catch-the-light.herokuapp.com/" target="_blank">
+            <p class="wrapper card__title"> App made only with Node.js and Express framework</p>
+            <img class="card__poster" src="assets/images/catch-the-light-poster.jpg" alt="project-2">
+          </a>
+  
+          <a class="card card--flex test" href="https://liquidworld.herokuapp.com/" target="_blank">
+            <p class="wrapper card__title"> App made on client side with Angular2 and on the server side with Node.js</p>
+            <img class="card__poster" src="assets/images/liquid-world-poster.jpg" alt="project-3">
+          </a>
+  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    &copy; Mihai Costantea 2018
+  </footer>
+
+  <div class="modal">
+
+    <div class="modal__content">
+
+      <h2 class="section-title section-title--no-t-margin"><img class="section-title__icon" src="assets/images/mail.svg" alt="mail">  Get in<strong> Touch</strong></h2>
+      <p class="section-subtitle">Send me an e-mail to: <a href="mailto:cos_mihai23@yahoo.com"><strong>cos_mihai23@yahoo.com</strong></a></p>
+      <p class="section-subtitle"> - or - </p>
+      <p class="section-subtitle">contact me on <a href="https://www.linkedin.com/in/mihai-costantea-647534162/" target="_blank"><strong>LinkedIn</strong></a></p>
+      <p class="section-subtitle"> - and also - </p>
+      <p class="section-subtitle">visit my <a href="https://github.com/cosmihai" target="_blank"><strong>GitHub account</strong></a></p>
+
+    </div>
+
+    <div class="modal__close">X</div>
+
+  </div>
+
+  <script src="/assets/scripts/App-c83a9ce99d.js"></script>
+</body>
+</html>
