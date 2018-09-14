@@ -1,0 +1,12 @@
+.btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  color: #fabb69;
+  cursor: pointer;
+
+  @mixin atMedium {
+    display: none;
+  }
+}

@@ -844,6 +844,7 @@ strong {
 .site-header {  
   position: absolute;
   width: 100%;
+  max-width: 1920px;
   transition: background-color .4s ease-out;
 }
 
@@ -1169,6 +1170,22 @@ strong {
 .modal__close:hover {
       color: red;
     }
+
+.btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  color: #fabb69;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+
+.btn {
+    display: none
+}
+  }
 
 
 

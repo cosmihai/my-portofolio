@@ -1,10 +1,10 @@
-const gulp      = require('gulp');
-const imagemin  = require('gulp-imagemin');
-const del       = require('del');
-const usemin    = require('gulp-usemin');
-const rev       = require('gulp-rev');
-const cssnano   = require('gulp-cssnano');
-const uglify    = require ('gulp-uglify');
+const gulp        = require('gulp');
+const imagemin    = require('gulp-imagemin');
+const del         = require('del');
+const usemin      = require('gulp-usemin');
+const rev         = require('gulp-rev');
+const cssnano     = require('gulp-cssnano');
+const uglify      = require ('gulp-uglify');
 const browserSync = require('browser-sync').create();
 
 gulp.task('previewDist', () => {

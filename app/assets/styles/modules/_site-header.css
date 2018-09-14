@@ -1,6 +1,7 @@
 .site-header {  
   position: absolute;
   width: 100%;
+  max-width: 1920px;
   transition: background-color .4s ease-out;
   @mixin clearfix;
 
