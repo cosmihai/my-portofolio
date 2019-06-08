@@ -32,12 +32,12 @@
   }
 
   @mixin atMedium {
-    height: 400px;
+    height: 500px;
     position: relative;
   }
 
   @mixin atLarge {
-    height: 600px;
+    height: 700px;
   }
 
   &__text-content {
