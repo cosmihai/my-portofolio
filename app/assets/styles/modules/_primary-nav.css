@@ -29,6 +29,10 @@
     display: block;
     margin-bottom: 1rem;
 
+    &:last-child {
+      cursor: pointer;
+    }
+
     @mixin atMedium {
       display: inline-block;
       padding-left: 1rem;
