@@ -1,4 +1,12 @@
 const path = require('path');
+const postCSSPlugins = [
+  require("postcss-import"),
+  require("postcss-mixins"),
+  require("postcss-hexrgba"),
+  require("postcss-nested"), 
+  require("autoprefixer"),
+  require("postcss-simple-vars"), 
+]
 
 module.exports = {
   entry: "./app/assets/scripts/App.js",
@@ -6,20 +14,26 @@ module.exports = {
     path: path.resolve(__dirname, "app"),
     filename: "bundled.js"
   },
+  devServer: {
+    contentBase: path.join(__dirname, 'app'),
+    hot: true, 
+    port: 3000,
+    host: "0.0.0.0"
+  },
   mode: "development",
-  watch: true
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.js$/,
-  //       exclude: /node_modules/,
-  //       use: {
-  //         loader: 'babel-loader',
-  //         options: {
-  //           presets: ['env']
-  //         }
-  //       }
-  //     }
-  //   ]
-  // }
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader", 
+          "css-loader", 
+          { 
+            loader: "postcss-loader", 
+            options: { postcssOptions: { plugins: postCSSPlugins } } 
+          }
+        ]
+      }
+    ]
+  }
 }
