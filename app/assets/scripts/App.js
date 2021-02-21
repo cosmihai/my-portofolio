@@ -7,6 +7,6 @@ import '../styles/style.css';
 if (module.hot) module.hot.accept()
 
 new MobileMenu();
-new RevealOnScroll(".card", "70%");
+new RevealOnScroll(".card", 80);
 new StickyHeader();
 new Modal();
