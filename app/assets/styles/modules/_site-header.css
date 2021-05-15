@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 1920px;
   transition: background-color 0.4s ease-out;
-  @mixin clearfix;  
+  @mixin clearfix{};  
 
   &--is-expanded {
     background-color: $mainBlue;
