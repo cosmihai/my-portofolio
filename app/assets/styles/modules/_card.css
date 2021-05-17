@@ -18,10 +18,17 @@
 
   &__subtitle {
     font-weight: 100;
+    margin-bottom: 0.8rem;
 
     &--line-height-big {
       line-height: 3em;
     }
+  }
+
+
+  &__small-text {
+    font-size: 0.8rem;
+    font-weight: 100;
   }
 
   &__poster {
@@ -52,6 +59,11 @@
 
     &__subtitle {
       font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    &__small-text {
+      font-size: 0.9rem;
     }
   }
 
@@ -64,6 +76,10 @@
 
     &__subtitle {
       font-size: 1.4rem;
+    }
+
+    &__small-text {
+      font-size: 1rem;
     }
   }
 }
